@@ -7,6 +7,11 @@
   align-items: flex-start;
 }
 
+.calendar {
+  width: 800px;
+  max-width: 96vw;
+}
+
 h1,
 h2,
 h3,
