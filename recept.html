@@ -9,6 +9,24 @@
       type="image/x-icon"
       href="/images/christmas-sock-favicon.ico"
     />
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      let showJonssons = false;
+      const toggleJonssons = () => {
+        showJonssons = !showJonssons;
+        let visibility = showJonssons ? "visible" : "hidden";
+        document.getElementById("jonssons-img").style.visibility=visibility
+      }
+
+      function myFunction() {
+  var x = document.getElementById("jonssonsIMG");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+    </script>
   </head>
   <body>
     <h1>Receptsamling</h1>
@@ -83,7 +101,10 @@
           >https://www.landleyskok.se/recept/vegansk-janssons-frestelse</a
         >
       </li>
-      <li>Vegansk <a href="images/jonssons.jpg">Jönssons</a></li>
+      <li>Vegansk Jönssons <Button onClick="myFunction()">Visa</Button>
+        <div id="jonssonsIMG" class="jonssons-img">
+        <img src="images/jonssons-cropped.jpg" style="width: 100%;" /></li>
+      </div>
     </ul>
     <h3>Inlagd Aubergine</h3>
     <ul>
